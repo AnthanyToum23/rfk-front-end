@@ -1,0 +1,29 @@
+body {background-color: black; color: white;}
+input {background-color: black; color: white; width: 15px; height: 15px; font-size: 12px; text-align: center; font-family: monospace; border-style: none;}
+textarea {background-color: black; color: white; font-family: monospace; border-style: none;}
+#instructions {width: 400px;}
+a {color: white;}
+a:active {color: white;}
+a:visited {color: white;}
+a:hover {color: white;}
+#up {position: relative; width: 50px; left: 25px;}
+#left {width: 50px;}
+#down {position: relative; left: 25px; width: 50px;}
+#right {width: 50px;}
+
+/* high score table  */
+.highscore-table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.highscore-table th, .highscore-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.highscore-table th {
+    background-color: black;
+}

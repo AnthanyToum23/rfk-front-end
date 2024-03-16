@@ -1,0 +1,69 @@
+<!-----------------------------------------------------------------------------
+program: Developing a back-end
+author: Anthany Toum
+course: CIDS 325
+date: 11/15/2023
+assignment: #2
+description: Build a back-end for the cult classic game robotfindskitten that
+             will allow saving and loading of high scores.
+note: web will work on new tab.
+Shell: npm install express -> node server.js
+------------------------------------------------------------------------------>
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Robot Finds Kitten</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="startgame()">
+<script src="script.js"></script>
+<h1>Robot Finds Kitten</h1>
+<h2>A Zen Simulation</h2>
+<form action="#" name="rfk">
+<script type="text/javascript">
+drawboard();
+</script>
+<div>
+<textarea rows="3" cols="75" readonly="readonly" id="stat"></textarea>
+</div>
+<div>
+<button id="up" onclick="move('up')">Up</button>
+</div>
+<div>
+<button id="left" onclick="move('left')">Left</button>
+<button id="right" onclick="move('right')">Right</button>
+</div>
+<div>
+<button id="down" onclick="move('down')">Down</button>
+</div>
+</form>
+<form action="#" name="hidden">
+<div id="hidden">
+<input type="hidden" id="robotr" />
+<input type="hidden" id="robotc" />
+<input type="hidden" id="kittens" />
+<script type="text/javascript">
+hiddenfields();
+</script>
+</div>
+</form>
+<hr />
+
+<div id="highscores">
+    <h2>High Scores</h2>
+    <ul id="highscore-list"></ul>
+</div>
+
+<hr />
+<p>Refresh page for your high score!</p> <!-- new line -->
+<p id="instructions">In this game, you are robot (#). Your job is to find kitten. This task
+is complicated by the existence of various things which are not kitten.
+Robot must touch items to determine if they are kitten or not. The game
+ends when robotfindskitten. Alternatively, you may end the game by leaving the page.</p>
+<p>Download the original and find out more from <a href="http://www.robotfindskitten.org">robotfindskitten.org</a></p>
+<hr />
+<p>Made by Thom Curtis; visit <a href="http://www.herdofnerds.net/">Herd of Nerds</a>.</p>
+</body>
+</html>
